@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenima Booking</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  button{
+    background-color:black ;
+     vertical-align: middle;
+      width: 400px; 
+    height:70px ;
+  }
+.visible{
+  display: block;
+}
+.hidden{
+display: none;
+}
+button:hover{
+    text-decoration: underline; 
+
+}
+.zoom {
+  padding: 50px;
+  
+  transition: transform .2s; /* Animation */
+  width: 420px;
+  height: 470px;
+  margin: 0 auto;
+}
+.zoom1{
+  padding: 50px;
+  
+  transition: transform .2s; /* Animation */
+  width: 460px;
+  height: 380px;
+  margin: 0 auto;
+}
+.zoom1:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.m{
+    border-radius:25px;
+    float: left;
+    margin-right:10px ;
+
+
+}
+.m2{
+  border-radius:25px;
+    float: right;
+    margin-right:10px ;
+
+
+}
+.par{
+    font-family:Times New Roman ;
+     color: black; 
+    font-size: large;
+    vertical-align: middle;
+    font-size: 30px;
+}
+.d{
+    display: flex;
+   align-items:center;
+}
+a:hover{
+  color: blue;
+}
+</style>
+
+
+</head>
+<body style="background:white;">
+
+ <nav class="navbar navbar-default" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img src="movie.png" alt="cinema logo"  width: 50px height="50px">
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        
+        <li><a href="#">About</a></li>
+        <li><a href="#">Movies</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+  <div>
+  <img src="movie9.jpg" alt="movie" id="img1" width="1350px" height="430px" class="visible">
+<img src="movies12.jpg" alt="movie" id="img2" width="1350px" height="430px" class="hidden">
+<img src="moffer2.png" alt="movie" id="img3" width="1350px" height="430px" class="hidden">
+<img src="movie5.jpg" alt="movie" id="img4" width="1350px" height="430px" class="hidden">
+<img src="tickets.jpg" alt="movie" id="img5" width="1350px" height="430px" class="hidden">
+
+
+
+
+</div>
+<br>
+ <br>
+ <br>
+ <br>
+ 
+ <h1 class="par" style="text-align:center">
+  
+  <b> <u><a href="#this">Welcome to City of movies website!</a> </u></b>
+ </h1>
+ <br>
+ <br>
+  <div class="container" style="display: flex;
+  align-items:center;">
+    
+    <img src="movies1.jpg" alt="Cinque Terre"  class="zoom" class="m" >
+<p class="par" ><b> 
+  
+  Experience the magic of the big screen at our state-of the art cinemas.
+    Catch the latest blockbusters, independent films, and international movies at our cinemas.
+
+</b>
+  </p>
+
+  </div>
+ <div style="display: flex; align-items:center;" class="container">
+    <p class="par"><b>Get ready to experience the nostalgia and charm of classic movies that you can't find anywhere else - book your tickets now!</b>
+   </p>
+    <img src="class.jpg" alt="Cinque Terre"  class="zoom1" class="m2"  >
+
+
+
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ <div style="display: flex; align-items:center;" class="container">
+  <p class="par"><b>Who can watch Charlie Chaolin and say no!    Click here to see all classic movies. 
+  </b> 
+    <br>
+    <br>
+    <button type="button"  >Classic movies</button>
+  </p>
+ 
+  <iframe width="500" height="300" class="m2" src="https://www.youtube.com/embed/GLeDdzGUTq0?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div> 
+<br>
+<br>
+<br>
+<br>
+ <div style="display: flex; align-items:center;" class="container">
+    <p class="par"><b>Don't miss out on the magic of animation! Buy your ticket today and be transported to a world of imagination and wonder.</b> 
+      <br>
+      <br>
+      <button type="button" >Animation movies</button>
+    </p>
+   
+    <iframe width="750" height="340" class="m2" src="https://www.youtube.com/embed/kY3FL-Qq2AY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ 
+  </div>
+  <br><br><br><br>
+  <div style="display: flex; align-items:center;" class="container">
+    <p class="par"><b> 3D technology can make the movie experience more realistic, making it feel like you are part of the action on the screen.</b>
+      <br><br>
+      <button type="button" >3D movies</button></p>
+    <iframe width="500" height="315" class="m2" src="https://www.youtube.com/embed/CrmVN3cbXRc?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
+ 
+  </div>
+ <br><br><br><br>
+ <div style="display: flex; align-items:center;" class="container">
+    <p class="par"><b> And of course we don't forget comedy movies to make you're laugh heard beyound countries </b>
+      <br><br>
+      <button type="button" >Comedy movies</button></p>
+<iframe width="560" height="315" class="m2" src="https://www.youtube.com/embed/dzdpqRGA1qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+  </div>
+ <br><br><br><br>
+
+ <div style="display: flex; align-items:center;" class="container">
+  <p class="par"><b> And many other types Click here to see all other movies</b>
+    <br><br>
+    <button type="button"  >Movies</button></p>
+ </div>
+ <br><br><br><br>
+ <br><br><br><br>
+  <div class="navbar">
+  
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Home</a></li>
+    
+    <li><a href="#">About</a></li>
+    <li><a href="#">Movies</a></li>
+    
+  </ul>
+</div>
+
+
+  </div>
+
+<script type="text/javascript">
+var activeimagid=1;
+var nextimgid=1;
+setInterval(function(){
+nextimgid=nextimgid+1;
+if(nextimgid<5){
+  document.getElementById("img"+activeimagid).classList.replace("visible","hidden");
+    document.getElementById("img"+nextimgid).classList.replace("hidden","visible");
+ activeimagid=nextimgid;
+
+}
+else{
+  document.getElementById("img"+activeimagid).classList.replace("visible","hidden");
+    document.getElementById("img"+nextimgid).classList.replace("hidden","visible");
+   activeimagid=5;
+   nextimgid=0; 
+}
+
+
+},1000);
+</script>
+
+</body>
+</html>

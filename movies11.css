@@ -1,0 +1,406 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+
+
+  }
+  body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color:black ;
+   
+    
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .navigation .menu-icon{
+    cursor: pointer;
+    float: right;
+    padding: 20px 10px;
+    z-index: 103;
+  }
+ 
+  .navigation .menu-icon .nav-icon{
+    background-color: white;
+    display: block;
+    height: 3px;
+    width: 25px;
+    position: relative;
+    transition: background 0.2s ease-out;
+
+  }
+  .navigation .menu-icon .nav-icon::before,
+  .navigation .menu-icon .nav-icon::after{
+    background-color:white ;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all ease-out 0.2s;
+  }
+  .navigation .menu-icon .nav-icon::before{
+    top: 8px;
+  }
+  .navigation .menu-icon .nav-icon::after{
+    top: -8px;
+  }
+
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color: black;
+  }
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0px;
+
+  }
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0px;
+
+  }
+  .menu-btn{
+    display: none;
+  }
+
+
+  .menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 102;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fade 0.3s;
+  }
+ 
+  .menu li a {
+    color: white;
+    margin: 0px 40px;
+    font-size: 2rem;
+    font-family: Monoton;
+    transition: all ease 0.3s;
+  }
+  .menu li a:hover {
+    font-size: 2.3rem;
+    color: #e70634;
+    transition: all ease 0.3s;
+  }
+  .navigation .menu-btn:checked ~ .menu{
+    display: flex;
+  }
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .logo{
+    color: #e70634;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0px auto 0px 40px;
+    display: flex;
+    align-items: center;
+    font-family: Monoton;
+    letter-spacing: 1px;
+  }
+
+  .search-box{
+    background-color: #d1d1d111;
+    padding: 3px 20px;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .search-box input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff5e;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .search-box input::placeholder{
+    color: #ffffff5e;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .search-box button{
+    background-color: transparent;
+    color: #ffffffc9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+
+
+  .card {
+    width: 230px;
+    height: 300px;
+    background: black;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 10px  rgba(45, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+    overflow: hidden;
+    
+  }
+
+  .card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 5px 10px 10px  rgba(45, 0, 0, 0.705);
+    background: black;
+  }
+
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+    color: white;
+  }
+
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+
+
+  .myimg{
+    width: 230px;
+    height: 300px;    /*      */
+  }
+
+
+
+  button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid white;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+
+  #btn:hover,:focus {
+    color: #ffffff;
+    background: red;
+    border: 1px solid red;
+    text-shadow: 0 0 5px red,
+    0 0 10px red,
+    0 0 20px red;
+    box-shadow: 0 0 5px red,
+    0 0 20px red,
+    0 0 50px red,
+    0 0 100px red;
+  }
+
+  #btn1:hover,:focus {
+    color: #ffffff;
+    background: red;
+    border: 1px solid red;
+    text-shadow: 0 0 5px red,
+    0 0 10px red,
+    0 0 20px red;
+    box-shadow: 0 0 5px red,
+    0 0 20px red,
+    0 0 50px red,
+    0 0 100px red;
+  }
+
+
+  #btn2:hover,:focus {
+    color: #ffffff;
+    background: red;
+    border: 1px solid red;
+    text-shadow: 0 0 5px red,
+    0 0 10px red,
+    0 0 20px red;
+    box-shadow: 0 0 5px red,
+    0 0 20px red,
+    0 0 50px red,
+    0 0 100px red;
+  }
+
+
+
+  #btn3:hover,:focus {
+    color: #ffffff;
+    background: red;
+    border: 1px solid red;
+    text-shadow: 0 0 5px red,
+    0 0 10px red,
+    0 0 20px red;
+    box-shadow: 0 0 5px red,
+    0 0 20px red,
+    0 0 50px red,
+    0 0 100px red;
+  }
+  #btn4:hover,:focus {
+    color: #ffffff;
+    background: red;
+    border: 1px solid red;
+    text-shadow: 0 0 5px red,
+    0 0 10px red,
+    0 0 20px red;
+    box-shadow: 0 0 5px red,
+    0 0 20px red,
+    0 0 50px red,
+    0 0 100px red;
+  }
+
+  #btn5:hover,:focus {
+    color: #ffffff;
+    background: red;
+    border: 1px solid red;
+    text-shadow: 0 0 5px red,
+    0 0 10px red,
+    0 0 20px red;
+    box-shadow: 0 0 5px red,
+    0 0 20px red,
+    0 0 50px red,
+    0 0 100px red;
+  }
+
+
+  
+  .checked {
+    color: orange;
+  }
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  a{
+    color: black;
+  }
+  a:hover{
+    color:red;
+
+  }
+
+  /* Create three equal columns that floats next to each other */
+  
+  
+  
+  /* Clear floats after rows */
+  /* Float four columns side by side */
+
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+  /* Content */
+  .content {
+    background-color: black;
+    padding: 10px;
+  }
+main{
+margin: 30px auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin:auto;
+}
+main.card{
+  max-width: 300px;
+  flex:1 1 210px;
+  
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.column {
+  flex: 0 0 calc(25% - 20px); /* Adjust the width to 25% */
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(25% - 20px); /* Adjust the max-width to 25% */
+}

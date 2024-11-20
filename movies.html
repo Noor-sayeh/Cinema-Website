@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema booking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Movies</title>
+    <link rel="stylesheet" href="movies1.css">
+    <script src="movies.js"></script>
+    
+
+   <style>
+
+    </style>
+</head>
+<body style="background-color: black;">
+  <nav class="navigation">
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+      <span class="nav-icon"></span>
+    </label>
+    <li class="logo">
+      Palestine Tower Cinemas
+    </li>
+  
+    <!------------menu---------------->
+    <ul class="menu">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Movies.html">Movies</a></li>
+      <li><a href="LogIn.html">Log In</a></li>
+    </ul>
+    <!-------search box------>
+    <form action="" class="search-box">
+      <input type="text" name="search" placeholder="Search Movie" class="search-input" required>
+      <button type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </nav>
+  
+  
+  
+  
+    
+      
+      <div id="myBtnContainer">
+        <button class="btn" id="myButton" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('Family')"> Family</button>
+        <button class="btn" onclick="filterSelection('animation')"> Animation</button>
+        <button class="btn" onclick="filterSelection('comedy')"> Comedy</button>
+        <button class="btn" onclick="filterSelection('3D')"> 3D</button>
+        <button class="btn" onclick="filterSelection('classic')"> Classic</button>
+        <button class="btn" onclick="filterSelection('shows')"> Shows</button>
+      </div>
+      
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column Family">
+          <div class="content" class="classe">
+            <a href="elf.php" onclick="goToWebsite('https://website3.com')">
+            <img src="images/elf,fam.jpg" alt="Elf" class="banner">
+            <h4>ELF</h4>
+            <p><span class="fa fa-star checked"></span>
+ <span class="fa fa-star checked"></span>
+ <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+     <span class="fa fa-star-half-full" style="color:orange"></span></p></a>
+          </div></div>
+        
+        <div class="column Family ">
+          <div class="content">
+            <a href="elf.html" onclick="goToWebsite('https://website3.com')">
+            <img src="images/enchanted,fam.jpg" alt="Enchanted" class="banner">
+            <h4>enchanted</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p></a>
+          </div>
+        </div>
+        <div class="column Family">
+          <div class="content">
+            <a herf="#">
+            <img src="images/ironman3,fam.jpg" alt="Family" class="banner"><a>
+            <h4>Iron man 3</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        
+        <div class="column Family">
+          <div class="content">
+            <a herf="#">
+            <img src="images/theparenttrap,fam.jpg" alt="Family" class="banner"><a>
+            <h4>The parent trap</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column Family">
+          <div class="content">
+            <a herf="#">
+            <img src="images/Mrs.Doubtfire,fam.jpg" alt="Family" class="banner"><a>
+            <h4>Mrs.Doubtfire</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column Family">
+          <div class="content">
+            <a herf="#">
+            <img src="images/thesandlot,fam.jpg" alt="Family" class="banner"><a>
+            <h4>The sandlot</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column Family">
+          <div class="content">
+            <a herf="#">
+            <img src="images/harry,fam.jpg" alt="Family" class="banner"><a>
+            <h4>Harry Potter</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column Family">
+          <div class="content">
+            <a herf="#">
+            <img src="images/hook,fam.jpg" alt="Family" class="banner"><a>
+            <h4>Hook</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+         </div>
+        </div>
+
+        <div class="column Family">
+          <div class="content">
+            <a herf="#">
+            <img src="images/webougthazoo,fam.jpg" alt="Family" class="banner"><a>
+            <h4>We bought a zoo</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        
+        <div class="column Family">
+          <div class="content">
+            <a herf="#">
+            <img src="images/pairates.jpg" alt="Family" class="banner"><a>
+            <h4>Pirates of the Caribbean</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+      
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/coco,an.jpg" alt="animation" class="banner"><a>
+            <h4>Coco</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/findingnema,an.jpg" alt="animation" class="banner"><a>
+            <h4>Finding nemo</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/hop,an.jpg" alt="animation" class="banner"><a>
+            <h4>Hop</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color: orange;"></span>
+              <span class="fa fa-star unchecked"></span>
+              <span class="fa fa-star unchecked"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/insideout,an.jpg" alt="animation" class="banner"><a>
+            <h4>Inside out</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/lilostitch,an.jpg" alt="animation" class="banner"><a>
+            <h4>Lilo & stitch</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color: orange;"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/overthemoon,an.jpg" alt="animation" class="banner"><a>
+            <h4>Over the moon</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/shrek,an.jpg" alt="animation" class="banner"><a>
+            <h4>Shrek</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/sing2,an.jpg" alt="animation" class="banner"><a>
+            <h4>Sing 2</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/turningred.an.jpg" alt="animation" class="banner"><a>
+            <h4>Turning red</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/up,an.jpg" alt="animation" class="banner"><a>
+            <h4>Up</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column animation">
+          <div class="content">
+            <a herf="#">
+            <img src="images/zooptopia,an.jpg" alt="animation" class="banner"><a>
+            <h4>Zooptopia</h4>
+         </div>
+        </div>
+
+
+        <div class="column comedy">
+          <div class="content">
+            <a herf="#">
+            <img src="images/tickecttoparadise,com.jpg" alt="comedy" class="banner"><a>
+            <h4>Tickect to paradise</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column comedy">
+          <div class="content">
+            <a herf="#">
+            <img src="images/champions.jpg" alt="comedy" class="banner"><a>
+            <h4>Champions</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        
+        <div class="column comedy">
+          <div class="content">
+            <a herf="#">
+            <img src="images/Everything Everywhere All at Once,com.jpg" alt="comedy" class="banner"><a>
+            <h4>Everything Everywhere All at Once</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column comedy">
+          <div class="content">
+            <a herf="#">
+            <img src="images/shazam,com.jpg" alt="comedy" class="banner"><a>
+            <h4>Shazam! Fury of the Gods</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column comedy">
+          <div class="content">
+            <a herf="#">
+            <img src="images/the Banshees of Inisherin,com.jpg" alt="comedy" class="banner"> <a>
+            <h4>The Banshees of Inisherin</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column comedy">
+          <div class="content">
+            <a herf="#">
+            <img src="images/bullettrain,com.jpg" alt="comedy" class="banner"> <a>
+            <h4>Bullet train</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column comedy">
+          <div class="content">
+            <a herf="#">
+            <img src="images/comingtoamerica,com.jpg" alt="comedy"class="banner"><a>
+            <h4>Coming to America</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+
+
+
+  
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/Avatar,3d.avif" alt="3D" class="banner"><a>
+            <h4>Avatar</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/Beowulf,3d.avif" alt="3D" class="banner"><a>
+            <h4>Beowulf</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/Coraline,3d.avif" alt="3D" class="banner"><a>
+            <h4>Coraline</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/The-Walk,3d.avif" alt="3D" class="banner"><a>
+            <h4>The Walk</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/Ghosts Of The Abyss,3d.avif" alt="3D" class="banner"><a>
+            <h4>Ghosts Of The Abyss</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/How To Train Your Dragon,3d.avif" alt="3D" class="banner"><a>
+            <h4>How To Train Your Dragon</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+         </div>
+        </div>
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/Nightmare-Before-Christmas,3d.avif" alt="3D" class="banner"><a>
+            <h4>Nightmare Before Christmas</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/My-Bloody-Valentine,3d.avif" alt="3D" class="banner"><a>
+            <h4>My bloody Valentine</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column 3D">
+          <div class="content">
+            <a herf="#">
+            <img src="images/Journey To The Center Of The Earth,3d.avif" alt="3D" class="banner"><a>
+            <h4>Journey To The Center Of The Earth</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column classic">
+          <div class="content">
+            <a herf="#">
+            <img src="images/A Raisin in the Sun,cl.jpg" alt="classic" class="banner"><a>
+            <h4>A Raisin in the Sun</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column classic">
+          <div class="content">
+            <a herf="#">
+            <img src="images/allabouteve,cl.jpg" alt="classic" class="banner"><a>
+            <h4>All about eve</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column classic">
+          <div class="content">
+            <a herf="#">
+            <img src="images/casablanca,cl.jpg" alt="classic" class="banner"><a>
+            <h4>Casablanca</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column classic">
+          <div class="content">
+            <a herf="#">
+            <img src="images/northbynorthwest.jpg" alt="classic" class="banner"><a>
+            <h4>North by northwest</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column classic">
+          <div class="content">
+            <a herf="#">
+            <img src="images/romanholiday,cl.jpg" alt="classic" class="banner"><a>
+            <h4>Roman holiday</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column classic">
+          <div class="content">
+            <a herf="#">
+            <img src="images/wizardofoz,cl.jpg" alt="classic" class="banner"><a>
+            <h4>Wizard of oz</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-full" style="color:orange"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+        <div class="column classic">
+          <div class="content">
+            <a herf="#">
+            <img src="images/taxidriver,cl.jpg" alt="classic" class="banner"><a>
+            <h4>Taxi driver</h4>
+            <p><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unckecked"></span></p>
+          </div>
+        </div>
+
+      <!-- END GRID -->
+      </div>
+
+
+
+
+
+
+</body>
+</html>
